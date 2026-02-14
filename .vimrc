@@ -30,7 +30,7 @@ set hlsearch
 set undofile
 " set clipboard=unnamedplus
 
-" Sugestão: removi 'preview' para o menu não abrir uma janela extra no topo
+" removi 'preview' para o menu não abrir uma janela extra no topo
 set completeopt=menu,menuone,noselect
 
 " ============================================================================

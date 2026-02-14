@@ -1,7 +1,7 @@
 def Settings( **kwargs ):
     language = kwargs.get( 'language' )
 
-    # CONFIGURAÇÃO PARA PHP (Usando Intelephense que você instalou via npm)
+    # CONFIGURAÇÃO PARA PHP (instalação via npm)
     if language == 'php':
         return {
             'ls': {
@@ -22,8 +22,6 @@ def Settings( **kwargs ):
                 '-I/usr/include/gtkmm-3.0',
                 '-I/usr/include',
                 '-I./',
-                # Aqui você aponta para onde os fontes do NetBSD estão no seu FEDORA
-                '-I/home/jbonifacio/netbsd/src/sys', 
             ],
         }
 
