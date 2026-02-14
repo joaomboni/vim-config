@@ -60,6 +60,23 @@ nnoremap <C-p> <C-w>w
 " Salva, Compila e Roda C
 autocmd FileType c nnoremap <buffer> <leader>r :w<CR>:!gcc % -o %< && ./%<<CR>
 
+" Mapeia Ctrl + Z para desfazer no modo Normal
+nnoremap <C-z> :undo<CR>
+
+" Mapeia Ctrl + Z para desfazer no modo de Inserção
+inoremap <C-z> <Esc>:undo<CR>a
+
+" Move a linha atual para baixo (Alt + j)
+nnoremap <A-j> :m .+1<CR>==
+" Move a linha atual para cima (Alt + k)
+nnoremap <A-k> :m .-2<CR>==
+
+" Move a seleção no modo Visual para baixo (Alt + j)
+vnoremap <A-j> :m '>+1<CR>gv=gv
+" Move a seleção no modo Visual para cima (Alt + k)
+vnoremap <A-k> :m '<-2<CR>gv=gv
+
+
 " ============================================================================
 " 4. AUTO-SUGESTÃO (C/C++)
 " ============================================================================
