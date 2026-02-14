@@ -7,7 +7,7 @@ NC='\033[0m'
 
 # CONFIGURAÇÃO: Substitua pelo link real do seu repositório no GitHub
 # Exemplo: https://github.com/jbonifacio/meu-vim-config
-REPO_URL="https://github.com/jbonifacio/SEU_REPO"
+REPO_URL="https://github.com/joaomboni/vim-config.git"
 
 echo -e "${BLUE}===> Iniciando Instalação do Ambiente Completo (Fedora)${NC}"
 
