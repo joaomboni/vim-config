@@ -7,7 +7,7 @@ NC='\033[0m'
 
 # CONFIGURAÇÃO: Substitua pelo link real do seu repositório no GitHub
 # Exemplo: https://github.com/jbonifacio/meu-vim-config
-REPO_URL="https://github.com/joaomboni/vim-config.git"
+REPO_URL="https://raw.githubusercontent.com/joaomboni/vim-config/main"
 
 echo -e "${BLUE}===> Iniciando Instalação do Ambiente Completo (Fedora)${NC}"
 
@@ -51,8 +51,8 @@ if [ -f "./.vimrc" ] && [ -f "./.ycm_extra_conf.py" ]; then
     cp .ycm_extra_conf.py ~/.vim/.ycm_extra_conf.py
 else
     echo "Sincronizando a partir do GitHub..."
-    curl -sL "${REPO_URL}/raw/main/.vimrc" -o ~/.vimrc
-    curl -sL "${REPO_URL}/raw/main/.ycm_extra_conf.py" -o ~/.vim/.ycm_extra_conf.py
+    curl -sL "${REPO_URL}/.vimrc" -o ~/.vimrc
+    curl -sL "${REPO_URL}/.ycm_extra_conf.py" -o ~/.vim/.ycm_extra_conf.py
 fi
 
 # 6. Instalação de Plugins
